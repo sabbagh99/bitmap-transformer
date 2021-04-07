@@ -19,7 +19,9 @@ public class App {
         String method = args[2];
         String text = "Hello";
         if(args.length > 3){
-            text = args[3];
+            text="";
+            for(int i=3; i<args.length; i++)
+                text += args[i]+" ";
         }
         if(method.equals("invert")){
             System.out.println("inverting...");
