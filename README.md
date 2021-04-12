@@ -1,17 +1,22 @@
 # Bitmap Transformer
-## In today lab we start dealing with bmp images using BufferedImage class to read the image then creating methods to read,write and modifying in the image as we need
-> ### To run code or test it in your images  you need to go inside the this directory after you clone the repo then run this command  :  `./gradlew run --args 'image.bmp output.bmp invert'`
+## In today lab we start working with bmp images using BufferedImage class to read the image  then creating methods to read,write and modifying in the image as we need
+### How we did that basically  all images contain pixels and each pixel present numbers these numbers have property we start changing these number to get  same image with different colors , or rotating image abd add text in the image. 
+> ### To run code or test it in your images  you need to go inside the directory after you clone the repo then run this command  :  `./gradlew run --args 'image.bmp output.bmp invert'`
 * where the first argument is the file you want to use in program(this file must be in the project directory in order for the java code to find it)
 
 * the second argument is the file name that will be saved after the program executes
 
 * the last argument is the functionality(method) you want to be applied on the image file you want.
 
-the available methods are (mirro, addWaterMark, invert)
+the available methods are the following: 
 
-for the **addWaterMark** the default text is "Hello", if you want a specific text you cant pass it as fourth argument as below
+### 1. *mirror* method to mirror your image
+### 2. *invert* this method will change your image color.
+### 3. *addWaterMark* if you want to add text in your images you need to provide your text when you run the command as following :
 
-`./gradlew run --args 'image.bmp my_design addWaterMark pay me to get the original design`
+* the **addWaterMark** the default text is "Hello", if you want a specific text you can pass it as fourth argument as below
+
+>./gradlew run --args image.bmp my_design addWaterMark `here go your text massege`
 
 if the file could not be found -> a message in red color will tell you the error.
 
